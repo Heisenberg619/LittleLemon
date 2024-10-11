@@ -1,12 +1,12 @@
 from django.db import models
 
 class Booking(models.Model):
-    Name=models.CharField(max_length=255)
-    No_of_guests=models.IntegerField()
-    BookingDate=models.DateTimeField()
+    name=models.CharField(max_length=255)
+    no_of_guests=models.IntegerField()
+    bookingdate=models.DateTimeField()
 
-class Menu(models.Model):
-    Title=models.CharField(max_length=255)
-    Price=models.DecimalField(max_digits=6,decimal_places=2)
-    Inventory=models.IntegerField()
+class MenuItem(models.Model):
+    title=models.CharField(max_length=255)
+    price=models.DecimalField(max_digits=6,decimal_places=2)
+    inventory=models.IntegerField()
 
