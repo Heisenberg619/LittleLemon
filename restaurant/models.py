@@ -1,4 +1,5 @@
 from django.db import models
+from django.test import TestCase
 
 class Booking(models.Model):
     name=models.CharField(max_length=255)
